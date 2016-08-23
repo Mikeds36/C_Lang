@@ -1,7 +1,21 @@
+//print Hello World
 #include <stdio.h>
 
 int main() 
 {
   printf("Hello World! \n");
+  return 0;
+}
+
+//print a,b
+#include <stdio.h>
+
+int main()
+{
+  int a;
+  int b;
+  
+  printf("$d %d", a, b);
+  
   return 0;
 }
