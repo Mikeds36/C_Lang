@@ -62,3 +62,17 @@ int main()
     printf("%d/%d=%d\n",a,b,a/b);
 }
 
+// 10진수를 입력받아 16진수로 출력하는 프로그램.
+// 15를 넣으면 f가 나오는게 정상.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+int b;
+
+int main()
+{
+    scanf("%d",&a);
+    printf("%x",a);
+}
