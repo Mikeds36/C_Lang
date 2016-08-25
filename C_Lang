@@ -3,8 +3,8 @@
 
 int main() 
 {
-  printf("Hello World! \n");
-  return 0;
+   printf("Hello World! \n");
+   return 0;
 }
 
 //print a,b
@@ -12,10 +12,53 @@ int main()
 
 int main()
 {
-  int a;
-  int b;
-  
-  printf("$d %d", a, b);
-  
-  return 0;
+   int a;
+   int b;
+   
+   printf("$d %d", a, b);
+   
+   return 0;
 }
+
+// 오류가 뜨는 예시
+// scanf에는 형식 지정 문자 밖에 들어갈 수 없다.
+// 파이썬처럼 input과 문자열을 같이 못 넣는것 같다.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+int b;
+
+int main()
+{
+    scanf("정수 a를 입력하세요.\n",a);
+    scanf("정수 b를 입력하세요.\n",b);
+    printf("%d+%d=%d",a,b,a+b);
+}
+
+
+// 사칙연산 프로그램
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+int b;
+
+int main()
+{
+    printf("사칙연산을 위한 프로그램\n");
+    printf("정수 a를 입력하세요.\n");
+    // 정수형 a를 입력받는다.
+    scanf("%d",&a);
+    printf("정수 b를 입력하세요.\n");
+    // 정수형 b를 입력받는다.
+    scanf("%d",&b);
+    // 사칙 연산을 실행한다.
+    printf("%d+%d=%d\n",a,b,a+b);
+    printf("%d-%d=%d\n",a,b,a-b);
+    printf("%d*%d=%d\n",a,b,a*b);
+    printf("%d/%d=%d\n",a,b,a/b);
+}
+
