@@ -136,3 +136,139 @@ int main()
         printf("a가 b보다 작습니다.");
     }
 }
+
+// 4의 배수인지 확인
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    if (a%4==0) {
+        printf("YES!");
+    }
+    else {
+        printf("No");
+    }
+    return 0;
+}
+
+// 샐러드바 출입 여부
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    if (a>=29700*2) {
+        printf("입장 가능");
+    }
+    else {
+        printf("입장 불가능. \n 부족한 금액 : %d",29700*2-a);
+    }
+}
+
+// 시험점수로 상장 상품수여
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    if(a>=95) {
+        printf("상품,상장 투척!");
+    }
+    else if (a>=90) {
+        printf("상장 투척!");
+    }
+    else {
+        printf("돌아가.");
+    }
+    return 0;
+}
+
+// 두수를 입력받아 각각 6의 배수인지 확인
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    scanf("%d",&b);
+    if (a%6==0 && b%6==0) {
+        printf("둘다 6의 배수 !");
+    }
+    else if (a%6!=0 && b%6==0) {
+        printf("b만 6의 배수 !");
+    }
+    else if (a%6==0 && b%6!=0) {
+        printf("a만 6의 배수 !");
+    }
+    else {
+        printf("돌아가.");
+    }
+    return 0;
+}
+
+// 100점만 특별한 문장
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    if (a<60) {
+        printf("돌아가.");
+    }
+    else if (a<100) {
+        printf("응 잘했네.");
+    }
+    else if (a>100){
+        printf("장난?");
+    }
+    else {
+        printf("와 참 잘 했 다.");
+    }
+}
+
+// ABC분류 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int a,b;
+
+int main()
+{
+    scanf("%d",&a);
+    if (a<80) {
+        printf("불 합 격");
+    }
+    else if (a<85) {
+        printf("C");
+    }
+    else if (a<90) {
+        printf("B");
+    }
+    else if (a>100) {
+        printf("꺼져;");
+    }
+    else {
+        printf("A");
+    }
+}
