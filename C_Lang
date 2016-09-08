@@ -266,7 +266,7 @@ int main()
         printf("B");
     }
     else if (a>100) {
-        printf("꺼져;");
+        printf("가라;");
     }
     else {
         printf("A");
