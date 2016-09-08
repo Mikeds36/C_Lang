@@ -93,3 +93,46 @@ int main()
     printf("%d\n",b);
     return 0;
 }
+
+// 나이 입력받은뒤 성인 감별
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    printf("사용자의 나이 : %d세\n",a);
+    if(a>=19) {
+        printf("성인입니다.");
+    }
+    else {
+        printf("성인이 아닙니다.");
+    }
+    return 0;
+}
+
+// 두 수를 입력받아 어느 수가 더 큰지.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b;
+    printf("a를 입력하시오.\n");
+    scanf("%d",&a);
+    printf("b를 입력하시오.\n");
+    scanf("%d",&b);
+    printf("입력받은 두 수 : %d, %d\n",a,b);
+    if (a>b) {
+        printf("a가 b보다 큽니다.\n");
+    }
+    else if (a==b) {
+        printf("a와 b는 같은 값 입니다.\n");
+    }
+    else {
+        printf("a가 b보다 작습니다.");
+    }
+}
